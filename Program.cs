@@ -47,8 +47,33 @@ namespace learnCsharp
              *  Number
              */
 
+            Console.WriteLine(-5.763);
 
+            //https://stackoverflow.com/questions/618535/difference-between-decimal-float-and-double-in-net
+            int add = 5 + 8;
+            double add2 = 5.7 + 8.7;
+            Console.WriteLine(add);
+            Console.WriteLine(add2);
+            int multiply = 5 * 8;
+            Console.WriteLine(multiply);
+            int divide = 5 / 8;
+            double divide2 = 5.0 / 8;
+            float divide3 = 5 / 8;
+            Console.WriteLine("int 5/8 is {0}", divide);
+            Console.WriteLine("double 5.0/8 is {0}", divide2);
+            Console.WriteLine("float 5/8 is {0}", divide3);
 
+            // Math contains almost all the useful Math operations
+            double pi = Math.PI;
+            Console.WriteLine(pi);
+            double maxNumber = Math.Max(pi, 3);
+            Console.WriteLine("pi vs 3: {0} is larger", maxNumber);
+            double absValue = Math.Abs(-4.56);
+            Console.WriteLine("absolute value of -4.56 is {0}",absValue);
+            double roundUp = Math.Round(5.5);
+            double roundDown = Math.Round(pi);
+            Console.WriteLine("5.5 can be rounded up to {0}",roundUp);
+            Console.WriteLine("pi can be rounded down to {0}",roundDown);
             Console.ReadLine();
         }
     }

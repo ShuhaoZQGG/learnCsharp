@@ -74,6 +74,13 @@ namespace learnCsharp
             double roundDown = Math.Round(pi);
             Console.WriteLine("5.5 can be rounded up to {0}",roundUp);
             Console.WriteLine("pi can be rounded down to {0}",roundDown);
+
+            // Getting User Inputs
+            Console.Write("Enter your name: ");
+            string inputName = Console.ReadLine();
+            Console.Write("How should I address you? ex: Mr. Mrs. Dr.: ");
+            string inputPronoun = Console.ReadLine();
+            Console.WriteLine("Hello, {0}. {1}", inputPronoun, inputName);
             Console.ReadLine();
         }
     }

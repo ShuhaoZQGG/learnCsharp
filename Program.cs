@@ -114,15 +114,23 @@ namespace learnCsharp
             friends[1] = "Kelly";
             Console.WriteLine(friends[1]);
 
-            // Call the Method
-            SayHi();
-
+            // Call the Method (Function)
+            SayHi("Shuhao");
+            double cubedNumber = getCube(10);
+            Console.WriteLine(cubedNumber);
             Console.ReadLine();
 
-            //Methods
-            static void SayHi()
+            // Methods (Functions)
+            static void SayHi(string name)
             {
-                Console.WriteLine("Hi");
+                Console.WriteLine("Hi {0}", name);
+            }
+
+            // Return Statement
+
+            static double getCube(int number)
+            {
+                return Math.Pow(number,3);
             }
         }
     }

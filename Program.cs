@@ -113,7 +113,17 @@ namespace learnCsharp
             friends[0] = "Jim";
             friends[1] = "Kelly";
             Console.WriteLine(friends[1]);
+
+            // Call the Method
+            SayHi();
+
             Console.ReadLine();
+
+            //Methods
+            static void SayHi()
+            {
+                Console.WriteLine("Hi");
+            }
         }
     }
 }

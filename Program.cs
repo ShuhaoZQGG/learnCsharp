@@ -115,7 +115,6 @@ namespace learnCsharp
             Console.WriteLine(friends[1]);
             Console.ReadLine();
 
-
         }
     }
 }

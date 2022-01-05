@@ -118,7 +118,7 @@ namespace learnCsharp
             SayHi("Shuhao");
             double cubedNumber = getCube(10);
             Console.WriteLine(cubedNumber);
-            Console.ReadLine();
+            
 
             // Methods (Functions)
             static void SayHi(string name)
@@ -132,6 +132,31 @@ namespace learnCsharp
             {
                 return Math.Pow(number,3);
             }
+
+            // If statement
+            bool isMale = false;
+
+            bool isTall = false;
+
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male");
+            }
+            else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a short male");
+            }
+            else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are a tall female");
+            }
+            else
+            {
+                Console.WriteLine("You are a short female");
+            }
+
+            Console.ReadLine();
         }
     }
 }

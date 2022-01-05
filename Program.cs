@@ -200,6 +200,49 @@ namespace learnCsharp
                 Console.WriteLine("please enter correct operator: +, -, * or /");
             }
             */
+
+            // Switch Statement
+            static string GetDay(int dayNum)
+            {
+                string dayName;
+
+                switch (dayNum)
+                {
+                    case 1:
+                        dayName = "Monday";
+                        break;
+                    case 2:
+                        dayName = "Tuesday";
+                        break;
+                    case 3:
+                        dayName = "Wednesday";
+                        break;
+                    case 4:
+                        dayName = "Thursday";
+                        break;
+                    case 5:
+                        dayName = "Friday";
+                        break;
+                    case 6:
+                        dayName = "Saturday";
+                        break;
+                    case 7:
+                        dayName = "Sunday";
+                        break;
+                    case -1:
+                        dayName = "Weekend";
+                        break;
+                    default:
+                        dayName = "Weekday";
+                        break;
+                }
+
+                return dayName;
+            }
+
+            Console.WriteLine(GetDay(7));
+            Console.WriteLine(GetDay(-1));
+            Console.WriteLine(GetDay(200));
             Console.ReadLine();
         }
     }

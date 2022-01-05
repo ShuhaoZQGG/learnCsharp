@@ -243,6 +243,33 @@ namespace learnCsharp
             Console.WriteLine(GetDay(7));
             Console.WriteLine(GetDay(-1));
             Console.WriteLine(GetDay(200));
+
+            // While loop
+            Console.WriteLine("While loop");
+            int j = 0;
+            while (j <= 5)
+            {
+                Console.WriteLine(j);
+                j ++;
+            }
+
+            // do while loop
+            Console.WriteLine("do While loop");
+            int index = 6;
+            do
+            {
+                Console.WriteLine(index);
+                index ++;
+            } while (index < 5);
+            // a 6 will be printed out even though it doesn't meet the condition i < 5
+            // This is because in a do while loop, it will execute the loop first and then check the condition
+
+            // for loop
+            Console.WriteLine("For loop");
+            for (int i = 0; i < luckyNumbers.Length; i ++)
+            {
+                Console.WriteLine(luckyNumbers[i]);
+            }
             Console.ReadLine();
         }
     }

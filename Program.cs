@@ -93,6 +93,27 @@ namespace learnCsharp
             Console.WriteLine("The answer is: {0}", num1 + num2);
             Console.ReadLine();
             */
+
+            // Arrays
+            int[] luckyNumbers = { 7, 6, 8, 10 };
+
+            Console.WriteLine(luckyNumbers[0]);
+
+            luckyNumbers[3] = 0;
+
+            Console.WriteLine(luckyNumbers[3]);
+            Console.WriteLine(luckyNumbers);
+            foreach (var number in luckyNumbers)
+            {
+                Console.Write(number.ToString());
+            }
+            Console.Write("\n");
+
+            string[] friends = new string[5]; // This friends array can hold up to 5 values
+            friends[0] = "Jim";
+            friends[1] = "Kelly";
+            Console.WriteLine(friends[1]);
+            Console.ReadLine();
         }
     }
 }

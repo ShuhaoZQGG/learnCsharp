@@ -156,6 +156,50 @@ namespace learnCsharp
                 Console.WriteLine("You are a short female");
             }
 
+            static int getMax(int num1, int num2)
+            {
+                if (num1 == num2)
+                {
+                    return -1;
+                }
+                else if (num1 > num2)
+                {
+                    return num1;
+                }
+                else
+                {
+                    return num2;
+                }
+            }
+            Console.WriteLine(getMax(10,5));
+            Console.WriteLine(getMax(10,10));
+
+            // a better calculator
+            /*
+            Console.Write("Enter a number:");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter an operator:");
+            string op = Console.ReadLine();
+            Console.Write("Enter another number:");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (op == "+")
+            {
+                Console.WriteLine("Result is {0}", num1 + num2);
+            } else if (op == "-")
+            {
+                Console.WriteLine("Result is {0}", num1 - num2);
+            } else if (op == "*")
+            {
+                Console.WriteLine("Result is {0}", num1 * num2);
+            } else if (op == "/")
+            {
+                Console.WriteLine("Result is {0}", num1 / num2);
+            } else
+            {
+                Console.WriteLine("please enter correct operator: +, -, * or /");
+            }
+            */
             Console.ReadLine();
         }
     }

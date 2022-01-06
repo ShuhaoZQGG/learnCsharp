@@ -320,9 +320,12 @@ namespace learnCsharp
             // an object is an instance of a class
 
             Book book1 = new Book("stock market", "SZQGG", 768); // Book at the front is like string, int... is a datatype that we defined
-            
             Console.WriteLine(book1.title);
 
+            Student student1 = new Student("Shuhao", "Mechanical Engineering", 2.94);
+            Student student2 = new Student("Xintong", "Computer Science and Statistics", 3.8);
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
             
             Console.ReadLine();
         }

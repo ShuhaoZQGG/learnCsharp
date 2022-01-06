@@ -295,6 +295,21 @@ namespace learnCsharp
             };
 
             Console.WriteLine(numberGrid[1, 1]);
+
+            // Exception Handling
+            try
+            {
+                Console.Write("Give me a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Give me another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                double result = num1 / num2;
+                Console.Write(result);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             Console.ReadLine();
         }
     }

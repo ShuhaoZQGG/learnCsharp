@@ -297,6 +297,8 @@ namespace learnCsharp
             Console.WriteLine(numberGrid[1, 1]);
 
             // Exception Handling
+
+            /*
             try
             {
                 Console.Write("Give me a number: ");
@@ -310,6 +312,18 @@ namespace learnCsharp
             {
                 Console.WriteLine(ex.Message);
             }
+            */
+            // Classes and Objects
+
+            // please refer to Book.cs for Class
+            // now we are goint to create an object,
+            // an object is an instance of a class
+
+            Book book1 = new Book("stock market", "SZQGG", 768); // Book at the front is like string, int... is a datatype that we defined
+            
+            Console.WriteLine(book1.title);
+
+            
             Console.ReadLine();
         }
     }

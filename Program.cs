@@ -270,6 +270,31 @@ namespace learnCsharp
             {
                 Console.WriteLine(luckyNumbers[i]);
             }
+
+            /*
+            static double GetPow(int baseNum, int powNum)
+            {
+                return Math.Pow(baseNum, powNum);
+            }
+
+            Console.Write("Please enter a base num: ");
+            string baseNum = Console.ReadLine();
+            Console.Write("Please enter a pow num: ");
+            string powNum = Console.ReadLine();
+            double result = GetPow(Int32.Parse(baseNum), Int32.Parse(powNum));
+            Console.WriteLine(result);
+            */
+
+            // 2D array
+            int[,] numberGrid =
+            {
+                { 0, 0 },
+                { 1, 0 },
+                { 0, 1 },
+                { 1, 1 },
+            };
+
+            Console.WriteLine(numberGrid[1, 1]);
             Console.ReadLine();
         }
     }

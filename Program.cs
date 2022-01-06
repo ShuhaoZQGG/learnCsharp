@@ -326,7 +326,26 @@ namespace learnCsharp
             Student student2 = new Student("Xintong", "Computer Science and Statistics", 3.8);
             Console.WriteLine(student1.HasHonors());
             Console.WriteLine(student2.HasHonors());
-            
+
+            Movie avengers = new Movie("Avengers", "Joss", "hello");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "R");
+            Console.WriteLine(avengers.Rating);
+            Console.WriteLine(shrek.Rating);
+
+            Console.WriteLine(Song.songCount);
+            Song holiday = new Song("Holiday", "Green Day", "pop");
+            Console.WriteLine(holiday.singer);
+            Console.WriteLine(Song.songCount); // this works because songCount is a static
+            // Console.WriteLine(holiday.songCount) //this will fail
+
+            Chef chef = new Chef();
+            chef.MakeChicken();
+            chef.MakeSpecialDish();
+
+            ItalienChef italienchef = new ItalienChef();
+            italienchef.MakeChicken();
+            italienchef.MakePasta();
+            italienchef.MakeSpecialDish();
             Console.ReadLine();
         }
     }
